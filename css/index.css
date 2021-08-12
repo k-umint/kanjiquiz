@@ -1,0 +1,28 @@
+body {
+  background: #bee0c2;
+  font-size: 14px;
+  font-family: Verdana,sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+body header {
+  margin-top: 100px;
+}
+
+body header #pageTitle {
+  width: 100%;
+  font-size: 50px;
+  margin: 0 auto;
+}
+
+body main #linkToQuiz {
+  margin: 200px auto 0;
+  font-size: 30px;
+  width: 300px;
+  height: 80px;
+  padding-top: 30px;
+  background-color: #fff;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */

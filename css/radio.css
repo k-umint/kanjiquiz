@@ -1,0 +1,63 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/* body {
+  font-family: 'Open Sans', helvetica, arial, sans-serif;
+  max-width: 305px;
+  margin: 3rem auto 0;
+  line-height: 1.6;
+  color: #444;
+} */
+
+div#fieldBack{
+    width: 100%;
+    height: 60px;
+    background:#FFF;
+    padding-top: 20px;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 100px;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0 0 1.6rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+}
+
+.radio-inline__input {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+}
+
+.radio-inline__label {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 18px;
+    border-radius: 3px;
+    transition: all .2s;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.radio-inline__input:checked + .radio-inline__label {
+    background: #004d25;
+    color: #fff;
+    text-shadow: 0 0 1px rgba(0,0,0,.7);
+}
+
+.radio-inline__input:focus + .radio-inline__label {
+    outline-color: #4D90FE;
+    outline-offset: -2px;
+    outline-style: auto;
+    outline-width: 5px;
+}

@@ -1,0 +1,34 @@
+body {
+  background: #bee0c2;
+  font-size: 14px;
+  font-family: Verdana,sans-serif;
+  text-align: center;
+  margin: 0;
+}
+
+body header {
+  margin-top: 100px;
+}
+
+body header #pageTitle {
+  width: 100%;
+  font-size: 30px;
+  margin: 0 auto;
+}
+
+body main #linkToQuiz {
+  margin: 60px auto;
+  font-size: 30px;
+  width: 250px;
+  height: 60px;
+  font-weight: bold;
+  padding-top: 20px;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+body main p {
+  font-size: 15px;
+}
+/*# sourceMappingURL=index_phone.css.map */
