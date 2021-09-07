@@ -1,0 +1,75 @@
+body {
+    background: #26274e;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    header {
+        margin-top: 50px;
+        color: #fff;
+        #pageTitle {
+            width: 100%;
+            margin: 0 auto;
+            #kanji {
+                font-family: serif;
+                margin-bottom: 0;
+                font-size: 40px;
+            }
+            #katakana {
+                font-family: sans-serif;
+                margin-top: 0;
+                font-size: 40px;
+            }
+            div {
+                width: 80%;
+                margin: 0 auto 60px;
+                text-align: left;
+                p {
+                    font-size: 20px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    main {
+        color: #fff;
+        h1 {
+            text-decoration: underline;
+        }
+        #fieldBack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1020px;
+            margin: 0 auto 50px;
+            button {
+                width: 300px;
+                height: 70px;
+                margin: 10px 20px;
+                background-color: #fff;
+                color: #000;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                font-size: 40px;
+                position: relative;
+                box-shadow: 3px 3px 0px 1px #cccccc;
+                border-radius: 5px;
+                &:active {
+                    background-color: #cccccc;
+                    box-shadow: 0px 1px 0px 2px #26274e;
+                    transform: translate(3px, 3px);
+                }
+                p {
+                    position: absolute;
+                    display: inline-block;
+                    width: 80%;
+                    margin: 0;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    &.try {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

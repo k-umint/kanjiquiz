@@ -1,0 +1,110 @@
+body {
+    background: #26274e;
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+    header {
+        margin-top: 100px;
+        color: #fff;
+        #pageTitle {
+            width: 100%;
+            margin: 0 auto;
+            #kanji {
+                font-family: serif;
+                margin-bottom: 0;
+                font-size: 50px;
+            }
+            #katakana {
+                font-family: sans-serif;
+                margin: 0 auto 30px;
+                font-size: 60px;
+            }
+            div {
+                width: 40%;
+                margin: 0 auto 60px;
+                text-align: left;
+                p {
+                    font-size: 25px;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    main {
+        color: #fff;
+        h1 {
+            text-decoration: underline;
+        }
+        #fieldBack {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            max-width: 1020px;
+            margin: 0 auto;
+            button {
+                width: 300px;
+                height: 200px;
+                margin: 30px 20px;
+                background-color: #fff;
+                color: #000;
+                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+                font-size: 40px;
+                position: relative;
+                &:hover::before {
+                    content: "";
+                    display: block;
+                    width: 0px;
+                    height: 0px;
+                    background: transparent;
+                    border-bottom: 150px solid lightgreen;
+                    border-left: 0px solid transparent;
+                    border-right: 100px solid transparent;
+                    top: 45px;
+                    left: 0px;
+                    position: absolute;
+                }
+                &:hover::after {
+                    content: "";
+                    display: block;
+                    width: 0px;
+                    height: 0px;
+                    background: transparent;
+                    border-top: 150px solid lightgreen;
+                    border-left: 100px solid transparent;
+                    border-right: 0px solid transparent;
+                    top: 0px;
+                    left: 195px;
+                    position: absolute;
+                }
+                &:hover {
+                    p {
+                        position: absolute;
+                        margin: 0;
+                        top: 0%;
+                        left: 0%;
+                        transform: translate(0%, 80%);
+                        &.try {
+                            display: inline-block;
+                            color: lightgreen;
+                            font-size: 80px;
+                            transform: translate(30%, 120%);
+                        }
+                    }
+                }
+                p {
+                    position: absolute;
+                    display: inline-block;
+                    width: 80%;
+                    margin: 0;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    transition: all 0.5s;
+                    &.try {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

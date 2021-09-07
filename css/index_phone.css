@@ -1,0 +1,98 @@
+body {
+  background: #26274e;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+body header {
+  margin-top: 50px;
+  color: #fff;
+}
+
+body header #pageTitle {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body header #pageTitle #kanji {
+  font-family: serif;
+  margin-bottom: 0;
+  font-size: 40px;
+}
+
+body header #pageTitle #katakana {
+  font-family: sans-serif;
+  margin-top: 0;
+  font-size: 40px;
+}
+
+body header #pageTitle div {
+  width: 80%;
+  margin: 0 auto 60px;
+  text-align: left;
+}
+
+body header #pageTitle div p {
+  font-size: 20px;
+  margin: 0;
+}
+
+body main {
+  color: #fff;
+}
+
+body main h1 {
+  text-decoration: underline;
+}
+
+body main #fieldBack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1020px;
+  margin: 0 auto 50px;
+}
+
+body main #fieldBack button {
+  width: 300px;
+  height: 70px;
+  margin: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+  position: relative;
+  -webkit-box-shadow: 3px 3px 0px 1px #cccccc;
+          box-shadow: 3px 3px 0px 1px #cccccc;
+  border-radius: 5px;
+}
+
+body main #fieldBack button:active {
+  background-color: #cccccc;
+  -webkit-box-shadow: 0px 1px 0px 2px #26274e;
+          box-shadow: 0px 1px 0px 2px #26274e;
+  -webkit-transform: translate(3px, 3px);
+          transform: translate(3px, 3px);
+}
+
+body main #fieldBack button p {
+  position: absolute;
+  display: inline-block;
+  width: 80%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body main #fieldBack button p.try {
+  display: none;
+}
+/*# sourceMappingURL=index_phone.css.map */

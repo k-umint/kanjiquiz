@@ -1,0 +1,134 @@
+body {
+  background: #26274e;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+body header {
+  margin-top: 100px;
+  color: #fff;
+}
+
+body header #pageTitle {
+  width: 100%;
+  margin: 0 auto;
+}
+
+body header #pageTitle #kanji {
+  font-family: serif;
+  margin-bottom: 0;
+  font-size: 50px;
+}
+
+body header #pageTitle #katakana {
+  font-family: sans-serif;
+  margin: 0 auto 30px;
+  font-size: 60px;
+}
+
+body header #pageTitle div {
+  width: 40%;
+  margin: 0 auto 60px;
+  text-align: left;
+}
+
+body header #pageTitle div p {
+  font-size: 25px;
+  margin: 0;
+}
+
+body main {
+  color: #fff;
+}
+
+body main h1 {
+  text-decoration: underline;
+}
+
+body main #fieldBack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+body main #fieldBack button {
+  width: 300px;
+  height: 200px;
+  margin: 30px 20px;
+  background-color: #fff;
+  color: #000;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 40px;
+  position: relative;
+}
+
+body main #fieldBack button:hover::before {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  background: transparent;
+  border-bottom: 150px solid lightgreen;
+  border-left: 0px solid transparent;
+  border-right: 100px solid transparent;
+  top: 45px;
+  left: 0px;
+  position: absolute;
+}
+
+body main #fieldBack button:hover::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 0px;
+  background: transparent;
+  border-top: 150px solid lightgreen;
+  border-left: 100px solid transparent;
+  border-right: 0px solid transparent;
+  top: 0px;
+  left: 195px;
+  position: absolute;
+}
+
+body main #fieldBack button:hover p {
+  position: absolute;
+  margin: 0;
+  top: 0%;
+  left: 0%;
+  -webkit-transform: translate(0%, 80%);
+          transform: translate(0%, 80%);
+}
+
+body main #fieldBack button:hover p.try {
+  display: inline-block;
+  color: lightgreen;
+  font-size: 80px;
+  -webkit-transform: translate(30%, 120%);
+          transform: translate(30%, 120%);
+}
+
+body main #fieldBack button p {
+  position: absolute;
+  display: inline-block;
+  width: 80%;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+body main #fieldBack button p.try {
+  display: none;
+}
+/*# sourceMappingURL=index.css.map */
