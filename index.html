@@ -4,61 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>難読漢字50問TimeAttack</title>
+    <title>難読漢字 タイムアタック</title>
     <link rel="icon" href="img/favicon.ico">
-    <link rel="stylesheet" href="css/index.css" media="screen and (min-width:1243px)">
-    <link rel="stylesheet" href="css/index_phone.css" media="screen and (max-width:1242px)">
-    <link rel="stylesheet" href="css/radio.css" media="screen and (min-width:1242px)">
-    <link rel="stylesheet" href="css/radio_phone.css" media="screen and (max-width:1242px)">
+    <link rel="stylesheet" href="css/index.css" media="screen and (min-width:481px)">
+    <link rel="stylesheet" href="css/index_phone.css" media="screen and (max-width:480px)">
 </head>
 
 <body>
 
     <header>
-        <div id="pageTitle">難読漢字50問 TimeAttack</div>
+        <div id="pageTitle">
+            <p id="kanji">難読漢字</p>
+            <p id="katakana">タイムアタック</p>
+            <div>
+                <p>ルール</p>
+                <p>・全部で50問</p>
+                <p>・間違えるごとにタイムに+3秒</p>
+            </div>
+        </div>
     </header>
 
     <main>
 
-        <h1>ジャンル一覧</h1>
-        <p>問題のジャンルを選択してスタート！！！</p>
+        <h1>ジャンル選択</h1>
         <div id="fieldBack">
-            <fieldset>
-                <input id="item-1" class="radio-inline__input" type="radio" name="genre" value="item-1"
-                    checked="checked" />
-                <label class="radio-inline__label" for="item-1">
-                    植物
-                </label>
-                <input id="item-2" class="radio-inline__input" type="radio" name="genre" value="item-2" />
-                <label class="radio-inline__label" for="item-2">
-                    国名
-                </label>
-                <input id="item-3" class="radio-inline__input" type="radio" name="genre" value="item-3" />
-                <label class="radio-inline__label" for="item-3">
-                    魚類
-                </label>
-                <input id="item-4" class="radio-inline__input" type="radio" name="genre" value="item-4" />
-                <label class="radio-inline__label" for="item-4">
-                    鳥類
-                </label>
-                <input id="item-5" class="radio-inline__input" type="radio" name="genre" value="item-5" />
-                <label class="radio-inline__label" for="item-5">
-                    魚・鳥以外の生き物
-                </label>
-                <input id="item-6" class="radio-inline__input" type="radio" name="genre" value="item-6" />
-                <label class="radio-inline__label" for="item-6">
-                    外来語
-                </label>
-            </fieldset>
+            <button data-index="1" name="item1" onclick="clickedItem(event)">
+                <p>植物</p>
+                <p class="try">TRY!</p>
+            </button>
+            <button data-index="2" name="item2" onclick="clickedItem(event)">
+                <p>国名</p>
+                <p class="try">TRY!</p>
+            </button>
+            <button data-index="3" name="item3" onclick="clickedItem(event)">
+                <p>魚類</p>
+                <p class="try">TRY!</p>
+            </button>
+            <button data-index="4" name="item4" onclick="clickedItem(event)">
+                <p>鳥類</p>
+                <p class="try">TRY!</p>
+            </button>
+            <button data-index="5" name="item5" onclick="clickedItem(event)">
+                <p>動物</p>
+                <p class="try">TRY!</p>
+            </button>
+            <button data-index="6" name="item6" onclick="clickedItem(event)">
+                <p>外来語</p>
+                <p class="try">TRY!</p>
+            </button>
         </div>
 
-        <!-- <a id="linkToQuiz" href="quiz.html">問題をはじめる</a> -->
-        <div id="linkToQuiz">問題をはじめる</div>
     </main>
-
-    <footer>
-
-    </footer>
 
     <script src="js/index.js"></script>
 

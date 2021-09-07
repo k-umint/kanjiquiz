@@ -4,50 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>難読漢字50問TimeAttack</title>
-
-    <link rel="stylesheet" href="css/style.css" media="screen and (min-width:1243px)">
-    <link rel="stylesheet" href="css/style_phone.css" media="screen and (max-width:1242px)">
-    <link rel="icon" href="image/favicon.ico">
+    <title>難読漢字 タイムアタック</title>
+    <link rel="stylesheet" href="css/style.css" media="screen and (min-width:481px)">
+    <link rel="stylesheet" href="css/style_phone.css" media="screen and (max-width:480px)">
+    <link rel="icon" href="img/favicon.ico">
     <script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://kit.fontawesome.com/ae9a4316d0.js" crossorigin="anonymous"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-168426269-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-168426269-1');
-    </script>
 </head>
 
 <body>
-    <section class="container">
-        <p id="count"></p>
-        <!-- <p id="time"></p> -->
-        <div id="time">
-            <div id="timer">00:00:000</div>
-        </div>
-        <p id="question"></p>
-        <ul id="choices"></ul>
-        <div id="btn" class="disabled">Next</div>
-        <div id="finishBtn">Finish</div>
+    <div class="container">
 
-        <section id="result" class="hidden">
-            <p id="score"></p>
-            <p id="timeScore"></p>
-            <a id="replay" href="">Replay?</a>
-            <a id="link" href="">つぶやく <i class="fab fa-twitter"></i></a>
-            <a id="backBtn2" href="index.html">問題選択に戻る</a>
-        </section>
-        <section id="startDisplay">
-            <p></p>
+        <div id="startDisplay">
             <div id="startBtn">Start</div>
-            <a id="backBtn1" href="index.html">問題選択に戻る</a>
-        </section>
+            <a class="backBtn" href="index.html">問題選択に戻る</a>
+        </div>
 
-    </section>
+        <div id="quiz" class="hidden">
+            <p id="count">1問目 / 50問中</p>
+            <div id="time">
+                <div id="timer">00:00:000</div>
+            </div>
+
+            <p id="question"></p>
+            <ul id="choices"></ul>
+            <div id="nextbtn" class="disabled">Next</div>
+            <a class="backBtn" href="index.html">問題選択に戻る</a>
+        </div>
+
+        <div id="result" class="hidden">
+            <p id="score"></p>
+            <div id="timeScore">
+
+            </div>
+            <ul>
+                <li><a id="link" href=""><i class="fab fa-twitter"></i>つぶやく</a></li>
+                <li><a id="retry" href="">Retry?</a></li>
+                <li><a class="backBtn" href="index.html">問題選択に戻る</a></li>
+            </ul>
+        </div>
+
+
+        <!--===============================================================================-->
+        <!-- ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓レイアウト確認用↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓-->
+        <!--===============================================================================-->
+
+        <!-- <div id="startDisplay" class="hidden">
+            <div id="startBtn">Start</div>
+            <a class="backBtn" href="">問題選択に戻る</a>
+        </div> -->
+
+        <!-- <div id="quiz">
+            <p id="count">1問目 / 50問中</p>
+            <div id="time">00:00:000</div>
+
+            <p id="question">案山子</p>
+            <ul id="choices">
+                <li class="choices-li correct">aaa</li>
+                <li class="choices-li no-selected">bbb</li>
+                <li class="choices-li wrong">ccc</li>
+                <li class="choices-li no-selected">ddd</li>
+            </ul>
+            <div id="nextbtn" class="disabled">Next</div>
+            <a class="backBtn" href="">問題選択に戻る</a>
+            <div id="circle"></div>
+            <div id="cross"><span></span></div>
+        </div> -->
+
+        <!-- <div id="result" class="hidden">
+            <p id="score">34問正解/ 50問中</p>
+            <div id="timeScore">
+                <div id="timer">タイム　00:02:598</div>
+            </div>
+            <ul>
+                <li><a id="link" href=""><i class="fab fa-twitter"></i>つぶやく</a></li>
+                <li><a id="retry" href="">Retry?</a></li>
+                <li><a class="backBtn" href="">問題選択に戻る</a></li>
+            </ul>
+        </div> -->
+
+        <!--===============================================================================-->
+        <!-- ↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑レイアウト確認用↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑↑-->
+        <!--===============================================================================-->
+
+    </div>
+
+    <!-- <footer>
+        <small>&copy; 2021 K.S</small>
+    </footer> -->
 
     <script src="js/main.js"></script>
 </body>
