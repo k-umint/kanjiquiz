@@ -43,7 +43,7 @@
 
     let quizSet = [];
     let genreNum;
-    let currentNum = 48;
+    let currentNum = 0;
     let isAnswered;
     let score = 0;
     let isLast;
