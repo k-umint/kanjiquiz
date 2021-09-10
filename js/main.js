@@ -298,7 +298,7 @@
                 + genreText + nlCode
                 + timeText + nlCode
                 + correctText + nlCode
-                + '&url=https://www.google.com/');
+                + '&url=https://k-umint.github.io/kanjiquiz/index.html');
 
             scoreLabel.textContent = correctText;
 
